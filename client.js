@@ -24,7 +24,7 @@ if (Meteor.isClient && Meteor.isCordova) {
           CordovaFileServer.httpd.startServer({
             'www_root': wwwroot,
             'port': 8080,
-            'localhost_only': true
+            'localhost_only': false
           }, function(url) {
             CordovaFileServer.httpUrl = url;
             // if server is up, it will return the url of http://<server ip>:port/
